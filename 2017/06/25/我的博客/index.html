@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>我的博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="博学谷项目 第1天shell介于用户和操作系统内核之间，用户通过shell来使用操作系统 图形化shellwindow操作系统的图形操作界面， GNOME KDE 命令行shellcmd  powershell bash zsh bashbash是linux系统中会自带的命令行shell，里面可以执行几乎所有linux的命令 bash的命令1命令名 -选项 参数    命令 说明 语法     c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的博客">
+<meta property="og:url" content="http://yoursite.com/2017/06/25/我的博客/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="博学谷项目 第1天shell介于用户和操作系统内核之间，用户通过shell来使用操作系统 图形化shellwindow操作系统的图形操作界面， GNOME KDE 命令行shellcmd  powershell bash zsh bashbash是linux系统中会自带的命令行shell，里面可以执行几乎所有linux的命令 bash的命令1命令名 -选项 参数    命令 说明 语法     c">
+<meta property="og:updated_time" content="2017-06-25T12:15:09.784Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="我的博客">
+<meta name="twitter:description" content="博学谷项目 第1天shell介于用户和操作系统内核之间，用户通过shell来使用操作系统 图形化shellwindow操作系统的图形操作界面， GNOME KDE 命令行shellcmd  powershell bash zsh bashbash是linux系统中会自带的命令行shell，里面可以执行几乎所有linux的命令 bash的命令1命令名 -选项 参数    命令 说明 语法     c">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +63,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-我的博客" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-我的博客" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/06/25/我的博客/" class="article-date">
   <time datetime="2017-06-25T12:14:34.000Z" itemprop="datePublished">2017-06-25</time>
@@ -74,8 +76,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/25/我的博客/">我的博客</a>
+    <h1 class="article-title" itemprop="name">
+      我的博客
     </h1>
   
 
@@ -289,121 +291,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-无语了" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/06/25/无语了/" class="article-date">
-  <time datetime="2017-06-25T11:45:23.000Z" itemprop="datePublished">2017-06-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/25/无语了/">无语了</a>
-    </h1>
+    <a href="/2017/06/25/无语了/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">无语了</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li><p>安装hexo<br>npm install hexo-cli -g</p>
-</li>
-<li><p>创建一个博客文件夹<br>在文件夹中执行    hexo init</p>
-</li>
-<li><p>在文件夹中直接执行 hexo s  在本地测试网页效果</p>
-</li>
-</ol>
-<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>hexo new “文章名称”</p>
-<p>这句命令执行完毕之后，会在source/_posts/ 中生成以文章名为文件名的markdown文件</p>
-<h2 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h2><p>找到对应的markdown文件，编辑内容即可</p>
-<h2 id="生成html"><a href="#生成html" class="headerlink" title="生成html"></a>生成html</h2><p>hexo g</p>
-<p>执行这条命令之后，会在public目录下生成所有的静态页面，只要将该目录下所有的文件进行发布，发布到github上，就可以通过github的静态页面托管服务来访问页面了</p>
-<h2 id="如何使用hexo-d-来发布网站呢"><a href="#如何使用hexo-d-来发布网站呢" class="headerlink" title="如何使用hexo d 来发布网站呢"></a>如何使用hexo d 来发布网站呢</h2><ol>
-<li><p>安装 hexo-deployer-git<br> npm install hexo-deployer-git –save</p>
-</li>
-<li><p>配置网站根目录下面的_config.yml<br> 配置最下面的deloy节点<br> deploy:</p>
-<pre><code>- type: git
-  repo: github静态页面托管项目的地址
-</code></pre></li>
-</ol>
-<p>2.1 在public目录下执行 git init 并进行一次提交</p>
-<ol>
-<li><p>按照正常流程创建博客， 编辑博客</p>
-</li>
-<li><p>执行hexo g</p>
-</li>
-<li><p>在 public 目录下去执行 hexo d</p>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/25/无语了/" data-id="cj4cogent0002kkvspy1zmh9z" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/06/25/hello-world/" class="article-date">
-  <time datetime="2017-06-25T08:19:39.337Z" itemprop="datePublished">2017-06-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/25/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/25/hello-world/" data-id="cj4cogeni0000kkvss43j9px6" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
